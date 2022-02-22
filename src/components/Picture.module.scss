@@ -1,0 +1,23 @@
+.picture {
+  margin: 10px;
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  transition: all 0.3s;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+
+  &:hover {
+    /*move up*/
+    transform: translateY(-15px);
+    /*透明的黑色的影子*/
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active,
+  &:target {
+    /*move up*/
+    transform: translateY(-10px);
+    background-color: gray;
+  }
+}
